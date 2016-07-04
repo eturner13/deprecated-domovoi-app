@@ -1,0 +1,28 @@
+{{yield}}
+<nav class="nav-header">
+	<span class="nav-logo">Domovoi</span>
+	<span class="nav-buttons">
+	{{#link-to "index"}}
+		<div class="icon">{{fa-icon "home"}}</div>
+		<div class="link">Rooms</div>
+	{{/link-to}}
+	{{#link-to "scenes"}}
+		<div class="icon">{{fa-icon "picture-o"}}</div>
+		<div class="link">Scenes</div>
+	{{/link-to}}
+	{{#link-to "scheduler"}}
+		<div class="icon">{{fa-icon "calendar"}}</div>
+		<div class="link">Scheduler</div>
+	{{/link-to}}
+	{{#link-to "review"}}
+		<div class="icon">{{fa-icon "tv"}}</div>
+		<div class="link">Review</div>
+	{{/link-to}}
+	{{#link-to "settings"}}
+		<div class="icon">{{fa-icon "gears"}}</div>
+		<div class="link">Settings</div>
+	{{/link-to}}
+	</span>
+	{{user-login}}
+</nav>
+

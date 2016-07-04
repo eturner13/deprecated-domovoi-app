@@ -1,0 +1,7 @@
+ @mixin transition-standard($attribute: all, $time: .15s, $ease: .05s) { 
+    -webkit-transition: $attribute $time ease $ease;
+    -moz-transition: $attribute $time ease $ease;
+    -o-transition: $attribute $time ease $ease;
+    -ms-transition: $attribute $time ease $ease;
+    transition: $attribute $time ease $ease;
+}

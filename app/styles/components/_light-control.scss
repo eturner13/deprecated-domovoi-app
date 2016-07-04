@@ -1,0 +1,20 @@
+@import "../modules/all";
+
+.light-control {
+	display: flex;
+	align-items: stretch;
+	width: 360px;
+	height: 160px;
+
+	margin: -2px 0 0 0;
+	padding: 0px 4px 0px 4px;
+
+	background-color: $brand2;
+	border: $border-size solid $white;
+	border-radius: 0 0 $border-curve $border-curve;
+	@include transition-standard();
+}
+
+.light-control:hover {
+		border: $border-size solid $truewhite;
+}

@@ -1,0 +1,9 @@
+@import "colors";
+
+@mixin gradient-linear($start: top, $color1: $brand1, $color2: $brand2) {
+  background: $color1;
+  background: -webkit-linear-gradient($start, $color1, $color2);
+  background: -o-linear-gradient($start, $color1, $color2);
+  background: -moz-linear-gradient($start, $color1, $color2);
+  background: linear-gradient(to $start, $color1, $color2);
+}

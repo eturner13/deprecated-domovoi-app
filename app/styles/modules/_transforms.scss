@@ -1,0 +1,11 @@
+@mixin transform-button-up() {    
+	-ms-transform: translate(-1px, -1px); /* IE 9 */
+   	-webkit-transform: translate(-1px, -1px); /* Safari */
+    transform: translate(-1px, -1px);
+}
+
+@mixin transform-button-down() {    
+	-ms-transform: translate(0px, 1px); /* IE 9 */
+   	-webkit-transform: translate(0px, 1px); /* Safari */
+    transform: translate(0px, 1px);
+}

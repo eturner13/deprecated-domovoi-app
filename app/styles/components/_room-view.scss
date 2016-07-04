@@ -1,0 +1,119 @@
+@import "../modules/all";
+
+.room-view {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	margin: 15px;
+
+	.room-main {
+		width: 400px;
+		height: 370px;
+		margin: 15px 15px 0px 15px;
+		z-index: 8;
+
+		border: $border-size solid $white;
+		border-radius: $border-curve;
+		box-shadow: $shadow-box;
+		background-color: $grey;
+		@include transition-standard($time: 1s, $ease: 0.2s);
+
+		.room-top {
+			height: 30px;
+			margin: 0px;
+			padding: 1px 0 0 15px;
+
+			@include font-normal(20px);
+			color: $white;
+			@include gradient-linear(right, $brand1, $black);
+			border-bottom: $border-size solid $white;
+			border-radius: $border-curve $border-curve 0 0;
+		}
+
+		.room-mid {
+			display: flex;
+			height: 300px;
+
+			border-bottom: $border-size solid $white;
+
+			.room-video {
+				flex: 9;
+
+				padding: 0px;
+				margin: 0px;
+
+				img {
+					height: 300px;
+					width: 400px;
+					margin: 0px;
+					padding: 0px;
+				}
+			}
+		}
+
+		.room-bottom {
+			display: flex;
+			height: 35px;
+
+			border-radius: 0 0 $border-curve $border-curve;
+
+			.room-buttons {
+				flex: 3;
+
+				display: flex;
+				justify-content: space-around;
+				align-items: stretch;
+
+				border-radius: 0 0 0 $border-curve;
+				background-color: $black;
+
+				button {
+					flex: 1;
+
+					@include transition-standard();
+					outline: none;
+					border: none;
+					background-color: inherit;
+					color: $white;
+					text-shadow: $shadow-icon;
+				}
+
+				.first {	
+					border-radius: 0 0 0 $border-curve;
+				}
+
+				button:hover {
+					color: $truewhite;
+					background-color: $brand1;
+					text-shadow: $shadow-iconhover;
+				}
+			}
+
+			.room-alerts {
+				flex: 4;
+
+				line-height: 17px;
+				text-align: left;
+				padding: 0 0 0 4px;
+
+				@include font-light();
+				color: $white;
+				background-color: $black;
+				border-left: $border-size solid $white;
+			}
+
+			.room-status {
+				flex: 1;
+
+				border: $border-size solid $black;
+				border-radius: 0 0 $border-curve 0;
+				@include gradient-linear(left, $good, $black);
+			}
+		}
+	}
+
+	.room-main:hover {
+		border: $border-size solid $truewhite;
+	}
+}

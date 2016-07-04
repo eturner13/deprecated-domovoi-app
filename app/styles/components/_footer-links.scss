@@ -1,0 +1,36 @@
+@import "../modules/all";
+
+.footer-links {
+	position: fixed;
+	width: 100%;
+	height: 22px;
+	bottom: 0px;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: $brand2;
+	//@include gradient-linear($start: bottom, $color1: $black);
+
+	a {
+		@include transition-standard();
+		@include font-normal(10px);
+		width: 100px;
+		padding: 0 15px 0 0;
+		text-decoration: none;
+		color: $grey;
+	}
+
+	a:hover {
+		color: $truewhite;
+	}
+
+	.logo {
+		@include font-normal(10px);
+		margin-right: auto;
+		padding: 0 0 0 20px;
+    	color: $grey;
+	}
+}

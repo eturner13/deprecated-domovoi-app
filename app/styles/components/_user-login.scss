@@ -1,0 +1,33 @@
+@import "../modules/all";
+
+.user-login {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-end;
+
+	margin: 0 40px 0 auto;
+	padding: 5px 7px 3px 10px;
+	line-height: 15px;
+
+	@include transition-standard($time: 1s, $ease: 0.2s);
+	border-bottom: 2px solid $brand2;
+	border-right: 2px solid $brand2;
+	border-radius: 10px 1px;
+
+	a {
+		@include transition-standard();
+		@include font-link(10px);
+		text-decoration: none;
+		color: $white;
+		text-shadow: $shadow-text;
+	}
+
+	a:hover {
+		color: $truewhite;
+	}
+}
+
+.user-login:hover {
+	border-bottom: 2px solid $brand1;
+	border-right: 2px solid $brand1;
+}

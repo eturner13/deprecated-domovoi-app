@@ -1,0 +1,32 @@
+{{yield}}
+<div class="room-main">
+	<div class="room-top">
+		Room Name
+	</div>
+	<div class="room-mid">
+		<span class="room-video">
+			<img src="images/camera-view.jpg">
+		</span>
+	</div>
+	<div class="room-bottom">
+		<span class="room-buttons">
+			<button class="first">
+				{{fa-icon "eye" size="lg"}}
+			</button>
+			<button {{action "toggleLightControl"}}>
+				{{fa-icon "lightbulb-o" size="lg"}}
+			</button>
+			<button {{action "toggleRoomSetup"}}>
+				{{fa-icon "pencil" size="lg"}}
+			</button>
+		</span>
+		<span class="room-alerts"><br>No Alerts</span>
+		<span class="room-status"></span>
+	</div>
+</div>
+{{#liquid-if isShowingLightControl class="room-drawer" }}
+	{{light-control}}
+{{/liquid-if}}
+{{#liquid-if isShowingRoomSetup class="room-drawer"}}
+	{{room-setup}}
+{{/liquid-if}}

@@ -1,0 +1,38 @@
+@import "colors";
+@import "fonts";
+@import "shadows";
+
+@mixin font-normal($size: 13px) {
+	font-size: $size;
+	font-family: $brand-font;
+	font-weight: $font-normal;
+	text-shadow: $shadow-text;
+}
+
+@mixin font-light($size: 13px) {
+	font-size: $size;
+	font-family: $brand-font;
+	font-weight: $font-light;
+	text-shadow: $shadow-text;
+}
+
+@mixin font-bold($size: 13px) {
+	font-size: $size;
+	font-family: $brand-font;
+	font-weight: $font-bold;
+	text-shadow: $shadow-logo;
+}
+
+@mixin font-link($size: 13px) {
+	font-size: $size;
+	font-family: $brand-font;
+	font-weight: $font-bold;
+	text-shadow: $shadow-link;
+}
+
+@mixin font-logo($size: 36px) {
+	font-size: $size;
+	font-family: $logo-font;
+	font-weight: 700;
+	text-shadow: $shadow-logo;
+}

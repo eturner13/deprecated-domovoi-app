@@ -1,0 +1,40 @@
+@import "../modules/all";
+
+.view-list {
+	width: 100%;
+	margin: 0px 0 10px 0;
+	padding: 10px 20px 5px 20px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	@include gradient-linear(bottom);
+	box-shadow: $shadow-header;
+
+	.buttons {
+		margin: 0 20px 0 20px;
+	}
+
+	.count {
+		@include font-normal();
+		height: 80%;
+		font-size: 18px;
+		color: $white;
+		text-shadow: $shadow-header;
+		border-bottom: 1px solid $white;
+	}
+
+	button {
+		margin: 0 10px 0 10px;
+		border: none;
+		outline: none;
+		color: $white;
+		background-color: inherit;
+	}
+
+	button:hover {
+		@include transition-standard();
+		@include transform-button-up();
+	}
+}

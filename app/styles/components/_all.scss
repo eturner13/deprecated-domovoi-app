@@ -1,0 +1,20 @@
+//Application components
+@import "nav-header";
+@import "footer-status";
+@import "footer-links";
+@import "user-login";
+@import "view-list";
+
+//Room view components
+@import "room-view";
+@import "room-setup";
+
+//Selector components
+@import "selector-camera";
+@import "selector-light";
+
+//Light controller components
+@import "light-control";
+@import "light-mode";
+@import "light-slider";
+@import "light-color";
