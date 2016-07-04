@@ -1,7 +1,6 @@
 # Domovoi-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Domovoi makes home automation via web easy.  Very much a work in progress, the features will eventually include control over Wi-Fi based lights and cameras, programming property wide scenes, scheduling scene changes, recording and reviewing security footage, and the ability to manage multiple properties per user via the same interface.
 
 ## Prerequisites
 
